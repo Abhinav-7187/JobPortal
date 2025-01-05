@@ -1,3 +1,14 @@
+## Home Page of JobPortal:
+
+
+
+
+![Screenshot 2025-01-05 231902](https://github.com/user-attachments/assets/226227b1-0946-40a3-8bb4-b4a6587f45e9)
+
+
+
+
+
 ### Project Structure:
 
 1) **Models:**
