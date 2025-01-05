@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employer Registration</title>
+    <link rel="stylesheet" href="{% static 'jobs/css/employer_register.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="form-card">
+            <h1>Join <span>DJobPortal</span> as an Employer</h1>
+            <p>Connect with top talent and post your job openings seamlessly.</p>
+            <form method="post" class="registration-form">
+                {% csrf_token %}
+                <div class="form-section">
+                    <h2>Account Details</h2>
+                    <div class="form-group">
+                        {{ user_form.as_p }}
+                    </div>
+                </div>
+                <div class="form-section">
+                    <h2>Company Profile</h2>
+                    <div class="form-group">
+                        {{ profile_form.as_p }}
+                    </div>
+                </div>
+                <button type="submit" class="btn">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+

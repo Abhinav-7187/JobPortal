@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to DJobPortal</title>
+    <link rel="stylesheet" href="{% static 'jobs/css/home.css' %}">
+</head>
+<body>
+    <div class="container">
+        <header class="hero">
+            <h1>Welcome to <span>DJobPortal</span></h1>
+            <p>Your one-stop solution for connecting job seekers and employers.</p>
+        </header>
+        <section class="dashboard">
+            <div class="card">
+                <h2>Employers</h2>
+                <p>Post job openings, manage applications, and find the best talent.</p>
+                <a href="{% url 'employer_register' %}" class="btn">Register as Employer</a>
+            </div>
+            <div class="card">
+                <h2>Job Seekers</h2>
+                <p>Find your dream job and connect with top companies easily.</p>
+                <a href="{% url 'employee_register' %}" class="btn">Register as Employee</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
