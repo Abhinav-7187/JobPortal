@@ -2,10 +2,10 @@
 
 1) Models:
 
-⋅⋅* EmployerProfile: Extended User model for employers.
-⋅⋅* EmployeeProfile: Extended User model for employees.
-⋅⋅* JobPost: Title, description, requirements, posted_by (FK to EmployerProfile).
-⋅⋅* Application: Job FK, applied_by FK to EmployeeProfile, application_date.
+* EmployerProfile: Extended User model for employers.
+* EmployeeProfile: Extended User model for employees.
+* JobPost: Title, description, requirements, posted_by (FK to EmployerProfile).
+* Application: Job FK, applied_by FK to EmployeeProfile, application_date.
 
 2) Views:
 
